@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        position: relative;
+      }
+      #section1 {
+        padding-top: 50px;
+        height: 250px;
+        color: #fff;
+        background-color: #1E88E5;
+      }
+      #section2 {
+        padding-top: 50px;
+        height: 500px;
+        color: black;
+        background-color: #673ab7;
+      }
+      #section3 {
+        padding-top: 50px;
+        height: 500px;
+        color: black;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="10">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Nate's Biography</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section1">Section 1</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="section1" class="container-fluid">
+      <h1>About Me</h1>
+      <p>
+        My name is Nate McAleer, I am 17 years old and I go to Jean Vanier CHS.
+        I was born in Phoenix, AZ in the USA on Sept 17th, 2019 and moved to
+        Canada when I was 10 years old in 2011. I have my parents, Rob and Kris,
+        my two siblings Ella and Owen, and my dog Lucy who is a Golden Doodle. I
+        enjoy playing basketball and a wide variety of other sports, I also
+        enjoy reading and learning new things. I’ve always been interested in
+        computers, spending time playing games with programming mechanics such
+        as Minecraft when I was younger. What really pushed me into programming
+        and computer science was a family friend who recently started mentoring
+        me in software engineering and java just before the summer of 2019. He
+        showed me how amazing working with computers was and how it is an
+        important job in society that will be relevant for many years to come.
+      </p>
+    </div>
+
+    <div id="section2" class="container-fluid">
+      <h1>Places I've Been</h1>
+
+      <img
+        id="photo1"
+        src="https://www.weather-us.com/weather/images/city/2/3/2337032-1500.jpg"
+        height="300px"
+        width="400"
+      />
+<!-- In the code bellow, it is telling the image with the ID of photo1 to change to a designated photo on click! -->
+      <button
+        onclick="document.getElementById('photo1').src='https://www.collingwood.ca/sites/default/files/styles/homepage_banner/public/uploads/homepage/banner/terminals_in_the_fall_dave_west_photography.jpg?itok=U2kKSaGT'"
+      >
+        Collingwood
+      </button>
+
+      <button
+        onclick="document.getElementById('photo1').src='https://img.theculturetrip.com/x/smart/wp-content/uploads/2017/03/6510375183_00fcf73a08_b.jpg'"
+      >
+        Mexico
+      </button>
+
+      <button
+        onclick="document.getElementById('photo1').src=' https://www.weather-us.com/weather/images/city/2/3/2337032-1500.jpg'"
+      >
+        Phoenix
+      </button>
+    </div>
+
+    <div id="section3" class="container-fluid">
+      <p>
+        Coming Soon... The Future!
+      </p>
+    </div>
+  </body>
+</html>
+
